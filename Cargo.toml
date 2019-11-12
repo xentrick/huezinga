@@ -1,0 +1,19 @@
+[package]
+name = "huezinga"
+version = "0.0.1"
+authors = ["Nick Mavis"]
+description = "Rust library for Philips Hue lights"
+repository = "http://github.com/xentrick/huezinga"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+serde = { version = "^1.0.102", features = ["derive"] }
+reqwest = { version = "^0.10.0-alpha.1", features = ["json"] }
+igd = "^0.9.1"
+failure = "0.1.6"
+serde_json = "^1.0.41"
+tokio = "^0.2.0-alpha.6"
+
+[dev-dependenicies]
+tokio = "^0.2.0-alpha.6"
